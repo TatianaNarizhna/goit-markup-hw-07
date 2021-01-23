@@ -22,23 +22,38 @@
     <header class="header">
       <div class="container common-line">
         <nav class="line">
-          <a href="" class="logo">Web<span class="logo-studio">Studio</span></a>
+          <a href="" class="logo"
+            >Web<span class="logo__studio">Studio</span></a
+          >
           <ul class="site-nav list">
-            <li class="items position">
-              <a href="./index.html" class="link active item underline"
+            <li class="site-nav__items site-nav__items--positioned">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--active site-nav__link--underlined"
                 >Студия</a
               >
             </li>
-            <li class="items">
-              <a href="./portfolio.html" class="link active">Портфолио</a>
+            <li class="site-nav__items">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--active"
+                >Портфолио</a
+              >
             </li>
-            <li class="items"><a href="" class="link active">Контакты</a></li>
+            <li class="site-nav__items">
+              <a href="" class="site-nav__link site-nav__link--active"
+                >Контакты</a
+              >
+            </li>
           </ul>
         </nav>
 
-        <ul class="address-header list">
-          <li class="items">
-            <a href="mailto:info@devstudio.com" class="address active">
+        <ul class="header-contacts list">
+          <li class="header-contacts__items">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contacts__address header-contacts__address--active"
+            >
               <svg class="envelope-icon">
                 <use href="./svgoptimized/sprite.svg#icon-envelope-hover"></use>
               </svg>
@@ -46,8 +61,11 @@
             >
           </li>
 
-          <li class="items">
-            <a href="tel:+380961111111" class="address active">
+          <li class="header-contacts__items">
+            <a
+              href="tel:+380961111111"
+              class="header-contacts__address header-contacts__address--active"
+            >
               <svg class="amartphone-icon">
                 <use href="./svgoptimized/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -63,8 +81,10 @@
       <div class="overlay">
         <section class="hero">
           <div class="container">
-            <div class="hero-padding">
-              <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="hero__centering">
+              <h1 class="hero__title">
+                Эффективные решения для вашего бизнеса
+              </h1>
 
               <button type="button" class="button" data-modal-open>
                 Заказать услугу
@@ -78,51 +98,51 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title hide">Преимущества</h2>
-          <ul class="list features flex-advantage">
-            <li class="list-adv">
+          <ul class="list advantages-flex">
+            <li class="list__advantages">
               <div class="antenna">
-                <svg class="antenna-size">
+                <svg class="antenna__size">
                   <use href="./svgoptimized/sprite.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list">Внимание к деталям</h3>
-              <p class="content content-advantages">
+              <h3 class="list__title--third">Внимание к деталям</h3>
+              <p class="list__content--describing">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="list-adv">
+            <li class="list__advantages">
               <div class="vector">
-                <svg class="vector-size">
+                <svg class="vector__size">
                   <use href="./svgoptimized/sprite.svg#icon-Vector"></use>
                 </svg>
               </div>
-              <h3 class="section-list">Пунктуальность</h3>
-              <p class="content content-advantages">
+              <h3 class="list__title--third">Пунктуальность</h3>
+              <p class="list__content--describing">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="list-adv">
+            <li class="list__advantages">
               <div class="diagram">
-                <svg class="diagram-size">
+                <svg class="diagram__size">
                   <use href="./svgoptimized/sprite.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list">Планирование</h3>
-              <p class="content content-advantages">
+              <h3 class="list__title--third">Планирование</h3>
+              <p class="list__content--describing">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="list-adv">
+            <li class="list__advantages">
               <div class="Group">
-                <svg class="Group-size">
+                <svg class="Group__size">
                   <use href="./svgoptimized/sprite.svg#icon-Group"></use>
                 </svg>
               </div>
-              <h3 class="section-list">Современные технологии</h3>
-              <p class="content content-advantages">
+              <h3 class="list__title--third">Современные технологии</h3>
+              <p class="list__content--describing">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий
               </p>
@@ -132,44 +152,44 @@
       </section>
 
       <!--секция,чем мы занимаемся в картинках-->
-      <section class="section box-img">
+      <section class="service-img section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
-          <ul class="list features skills">
-            <li class="skills-img">
-              <div class="before-skills">
+          <ul class="skills list">
+            <li class="skills__img">
+              <div>
                 <img
                   src="./imagesoptimized/skills1-min.jpg"
                   alt="набор разметки"
                   width="370"
                 />
-                <div class="thumb-skills">
-                  <h3 class="project-skills">Десктопные приложения</h3>
+                <div class="skills__thumb">
+                  <h3 class="skills__project">Десктопные приложения</h3>
                 </div>
               </div>
             </li>
-            <li class="skills-img">
-              <div class="before-skills">
+            <li class="skills__img">
+              <div>
                 <img
                   src="./imagesoptimized/skills2-min.jpg"
                   alt="оплата услуг через приложение"
                   width="370"
                 />
-                <div class="thumb-skills">
-                  <h3 class="project-skills">Мобильные приложения</h3>
+                <div class="skills__thumb">
+                  <h3 class="skills__project">Мобильные приложения</h3>
                 </div>
               </div>
             </li>
-            <li class="skills-img">
-              <div class="before-skills">
+            <li class="skills__img">
+              <div>
                 <img
                   src="./imagesoptimized/skills3-min.jpg"
                   alt="практика с помощью планшета"
                   width="370"
                 />
-                <div class="thumb-skills">
-                  <h3 class="project-skills">Дизайнерские решения</h3>
+                <div class="skills__thumb">
+                  <h3 class="skills__project">Дизайнерские решения</h3>
                 </div>
               </div>
             </li>
@@ -178,24 +198,26 @@
       </section>
 
       <!--секция-наша комманда-->
-      <section class="section bgc">
+      <section class="section bgc-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list features team-flex">
-            <li class="team">
+          <ul class="team-workers list">
+            <li class="team-workers__portfolio">
               <img
                 src="./imagesoptimized/ourteam1-min.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
 
-              <div class="team-content">
-                <h3 class="section-list name">Игорь Демьяненко</h3>
-                <p class="content proffesion">Product Designer</p>
-                <ul class="network-flex">
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+              <div class="team-workers__profile">
+                <h3 class="team-workers__name list__title--third">
+                  Игорь Демьяненко
+                </h3>
+                <p class="team-workers__position">Product Designer</p>
+                <ul class="team-workers__network">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-instagram-2"
                         ></use>
@@ -203,9 +225,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-facebook-1"
                         ></use>
@@ -213,9 +235,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-twitter-1"
                         ></use>
@@ -223,9 +245,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-linkedin-1"
                         ></use>
@@ -236,19 +258,21 @@
               </div>
             </li>
 
-            <li class="team">
+            <li class="team-workers__portfolio">
               <img
                 src="./imagesoptimized/ourteam2-min.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
-              <div class="team-content">
-                <h3 class="section-list name">Ольга Репина</h3>
-                <p class="content proffesion">Frontend Developer</p>
-                <ul class="network-flex">
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+              <div class="team-workers__profile">
+                <h3 class="team-workers__name list__title--third">
+                  Ольга Репина
+                </h3>
+                <p class="team-workers__position">Frontend Developer</p>
+                <ul class="team-workers__network">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-instagram-2"
                         ></use>
@@ -256,9 +280,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-facebook-1"
                         ></use>
@@ -266,9 +290,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-twitter-1"
                         ></use>
@@ -276,9 +300,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-linkedin-1"
                         ></use>
@@ -289,19 +313,21 @@
               </div>
             </li>
 
-            <li class="team">
+            <li class="team-workers__portfolio">
               <img
                 src="./imagesoptimized/ourteam3-min.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
-              <div class="team-content">
-                <h3 class="section-list name">Николай Тарасов</h3>
-                <p class="content proffesion">Marketing</p>
-                <ul class="network-flex">
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+              <div class="team-workers__profile">
+                <h3 class="team-workers__name list__title--third">
+                  Николай Тарасов
+                </h3>
+                <p class="team-workers__position">Marketing</p>
+                <ul class="team-workers__network">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-instagram-2"
                         ></use>
@@ -309,9 +335,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-facebook-1"
                         ></use>
@@ -319,9 +345,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-twitter-1"
                         ></use>
@@ -329,9 +355,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-linkedin-1"
                         ></use>
@@ -342,19 +368,21 @@
               </div>
             </li>
 
-            <li class="team">
+            <li class="team-workers__portfolio">
               <img
                 src="./imagesoptimized/ourteam4-min.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <div class="team-content">
-                <h3 class="section-list name">Михаил Ермаков</h3>
-                <p class="content proffesion">UI Designer</p>
-                <ul class="network-flex">
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+              <div class="team-workers__profile">
+                <h3 class="team-workers__name list__title--third">
+                  Михаил Ермаков
+                </h3>
+                <p class="team-workers__position">UI Designer</p>
+                <ul class="team-workers__network">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-instagram-2"
                         ></use>
@@ -362,9 +390,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-facebook-1"
                         ></use>
@@ -372,9 +400,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-twitter-1"
                         ></use>
@@ -382,9 +410,9 @@
                     </a>
                   </li>
 
-                  <li class="margin-flex">
-                    <a class="master-flex" href="">
-                      <svg class="size-flex">
+                  <li class="team-workers__network--centered">
+                    <a class="team-workers__network--transition" href="">
+                      <svg class="team-workers__icon">
                         <use
                           href="./svgoptimized/sprite.svg#icon-linkedin-1"
                         ></use>
@@ -456,19 +484,19 @@
         <div class="ttl-flex">
           <div class="footer-flex">
             <a href="" class="logo"
-              >Web<span class="studio-logo">Studio</span></a
+              >Web<span class="logo__studio--white">Studio</span></a
             >
             <address class="adress-footer">
               г. Киев, пр-т Леси Украинки, 26
             </address>
-            <ul class="list">
-              <li class="item">
-                <a href="mailto:info@example.com" class="list-footer"
+            <ul class="list footer-address">
+              <li class="footer-address__item">
+                <a href="mailto:info@example.com" class="footer-address__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="list-footer"
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-address__link"
                   >+38 099 111 11 11</a
                 >
               </li>

@@ -21,22 +21,37 @@
     <header class="header border">
       <div class="container common-line">
         <nav class="line">
-          <a href="" class="logo">Web<span class="logo-studio">Studio</span></a>
+          <a href="" class="logo"
+            >Web<span class="logo__studio">Studio</span></a
+          >
           <ul class="site-nav list">
-            <li class="items">
-              <a href="./index.html" class="link active">Студия</a>
+            <li class="site-nav__items">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--active"
+                >Студия</a
+              >
             </li>
-            <li class="items position">
-              <a href="./portfolio.html" class="link active item underline"
+            <li class="site-nav__items site-nav__items--positioned">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--active site-nav__link--underlined"
                 >Портфолио</a
               >
             </li>
-            <li class="items"><a href="" class="link active">Контакты</a></li>
+            <li class="site-nav__items">
+              <a href="" class="site-nav__link site-nav__link--active"
+                >Контакты</a
+              >
+            </li>
           </ul>
         </nav>
-        <ul class="address-header list">
-          <li class="items">
-            <a href="mailto:info@devstudio.com" class="address active">
+        <ul class="header-contacts list">
+          <li class="header-contacts__items">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contacts__address header-contacts__address--active"
+            >
               <svg class="envelope-icon">
                 <use href="./svgoptimized/sprite.svg#icon-envelope-hover"></use>
               </svg>
@@ -44,8 +59,11 @@
             >
           </li>
 
-          <li class="items">
-            <a href="tel:+380961111111" class="address active">
+          <li class="header-contacts__items">
+            <a
+              href="tel:+380961111111"
+              class="header-contacts__address header-contacts__address--active"
+            >
               <svg class="amartphone-icon">
                 <use href="./svgoptimized/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -62,7 +80,7 @@
         <div class="container">
           <h2 class="section-title hide">Навигация портфолио и проекты</h2>
 
-          <ul class="features list tip-line center">
+          <ul class="list tip-line center">
             <li class="tip">
               <button type="button" class="filter">Все</button>
             </li>
@@ -80,7 +98,7 @@
             </li>
           </ul>
 
-          <ul class="list features table-container">
+          <ul class="list table-container">
             <li class="table-element">
               <a class="table-block" href="">
                 <div class="overlay-thumb">
@@ -100,8 +118,8 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3 class="section-list projects">Технокряк</h3>
-                  <p class="content filter-name">Веб-сайт</p>
+                  <h3 class="list__title--third projects">Технокряк</h3>
+                  <p class="filter-name">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -124,10 +142,10 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">
+                  <h3 class="list__title--third projects">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="content filter-name">Дизайн</p>
+                  <p class="filter-name">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -150,8 +168,8 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Ресторан Seafood</h3>
-                  <p class="content filter-name">Приложение</p>
+                  <h3 class="list__title--third projects">Ресторан Seafood</h3>
+                  <p class="filter-name">Приложение</p>
                 </div>
               </a>
             </li>
@@ -174,8 +192,8 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Проект Prime</h3>
-                  <p class="content filter-name">Маркетинг</p>
+                  <h3 class="list__title--third projects">Проект Prime</h3>
+                  <p class="filter-name">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -198,8 +216,8 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Проект Boxes</h3>
-                  <p class="content filter-name">Приложение</p>
+                  <h3 class="list__title--third projects">Проект Boxes</h3>
+                  <p class="filter-name">Приложение</p>
                 </div>
               </a>
             </li>
@@ -222,10 +240,10 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">
+                  <h3 class="list__title--third projects">
                     Inspiration has no Borders
                   </h3>
-                  <p class="content filter-name">Веб-сайт</p>
+                  <p class="filter-name">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -248,8 +266,10 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Издание Limited Edition</h3>
-                  <p class="content filter-name">Дизайн</p>
+                  <h3 class="list__title--third projects">
+                    Издание Limited Edition
+                  </h3>
+                  <p class="filter-name">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -272,8 +292,8 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Проект LAB</h3>
-                  <p class="content filter-name">Маркетинг</p>
+                  <h3 class="list__title--third projects">Проект LAB</h3>
+                  <p class="filter-name">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -296,8 +316,8 @@
                 </div>
 
                 <div class="card-content">
-                  <h3 class="section-list projects">Growing Business</h3>
-                  <p class="content filter-name">Приложение</p>
+                  <h3 class="list__title--third projects">Growing Business</h3>
+                  <p class="filter-name">Приложение</p>
                 </div>
               </a>
             </li>
@@ -312,19 +332,19 @@
         <div class="ttl-flex">
           <div class="footer-flex">
             <a href="" class="logo"
-              >Web<span class="studio-logo">Studio</span></a
+              >Web<span class="logo__studio--white">Studio</span></a
             >
             <address class="adress-footer">
               г. Киев, пр-т Леси Украинки, 26
             </address>
             <ul class="list">
-              <li class="item">
-                <a href="mailto:info@example.com" class="list-footer"
+              <li class="footer-address__item">
+                <a href="mailto:info@example.com" class="footer-address__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="list-footer"
+              <li class="footer-address__item">
+                <a href="tel:+380991111111" class="footer-address__link"
                   >+38 099 111 11 11</a
                 >
               </li>
