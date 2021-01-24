@@ -258,7 +258,7 @@ a {
   pointer-events: none;
 }
 
-.modal {
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -276,7 +276,7 @@ a {
   transition-timing-function: var(--timing-function);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal-window {
   transform: scale(0.8) translate(-50%, -50%);
 }
 
@@ -315,12 +315,12 @@ a {
   padding: 46px 40px 35px 40px;
 }
 
-.modal-thumb {
+.modal-form__thumb {
   width: 100%;
   height: 100%;
 }
 
-.modal-paragraph {
+.modal-form__paragraph {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: bold;
@@ -826,18 +826,18 @@ textarea {
   list-style: none;
 }
 
-.clients-icon {
+.clients__list {
   width: 170px;
   height: 90px;
 
   margin-right: 30px;
 }
 
-.clients-icon:last-child {
+.clients__list:last-child {
   margin-right: 0;
 }
 
-.clients-flex {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -851,16 +851,10 @@ textarea {
   transition-timing-function: var(--timing-function), var(--timing-function);
 }
 
-.clients-flex:hover,
-.clients-flex:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.svg-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* портфолио - кнопки */
@@ -1038,7 +1032,7 @@ textarea {
   color: var(--white-hero-color);
 }
 
-.footer .adress-footer {
+.footer__address--physical {
   color: var(--white-hero-color);
   font-style: normal;
 }
@@ -1051,25 +1045,25 @@ textarea {
   padding-bottom: 60px;
 }
 
-.footer .adress-footer,
+.footer__address--physical,
 .footer .list-footer {
   display: block;
   line-height: 1.71;
 }
 
-.footer .adress-footer {
+.footer__address--physical {
   margin-bottom: 9px;
 }
 
-.footer-address__item {
+.footer__address--virtual {
   margin-bottom: 9px;
 }
 
-.footer-address__item:last-child {
+.footer__address--virtual:last-child {
   margin-bottom: 0;
 }
 
-.footer-address__link {
+.footer__link--transition {
   color: var(--transparent-gray);
 
   transition-property: color;
@@ -1077,14 +1071,14 @@ textarea {
   transition-timing-function: var(--timing-function);
 }
 
-.footer-address__link:hover,
-.footer-address__link:focus {
+.footer__link--transition:hover,
+.footer__link--transition:focus {
   color: var(--accent-color);
 }
 
 /* футер  - join */
-.footer-join,
-.mailing {
+.footer__join--appeal,
+.footer__mailing--appeal {
   margin: 0 0 20px 0;
 
   font-weight: bold;
@@ -1094,16 +1088,16 @@ textarea {
   color: var(--white-hero-color);
   text-transform: uppercase;
 }
-.join {
+.footer__join {
   margin-right: 93px;
 }
 
-.join-size {
+.footer__iconnetwork {
   width: 20px;
   height: 20px;
 }
 
-.join-master {
+.footer__networklist--centering {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1119,19 +1113,19 @@ textarea {
   transition-timing-function: var(--timing-function);
 }
 
-.join-master:hover,
-.join-master:focus {
+.footer__networklist--centering:hover,
+.footer__networklist--centering:focus {
   background-color: var(--accent-color);
 }
 
-.join-list {
+.footer__networklist {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.ttl-flex {
+.footer__baseline {
   display: flex;
   align-items: baseline;
   width: 100%;
@@ -1141,22 +1135,22 @@ textarea {
   margin: 0;
 }
 
-.footer-flex {
+.footer__address {
   margin-right: 70px;
   width: 231px;
 }
 
-.join-margin {
+.footer__networklist--positioning {
   margin-right: 10px;
 }
 
-.join-margin:last-child {
+.footer__networklist--positioning:last-child {
   margin-right: 0;
 }
 
 /* Подписаться на рассылку */
 
-.mailing-form {
+.footer__form {
   padding: 15px 0 15px 16px;
   margin-right: 12px;
   width: 358px;
@@ -1172,17 +1166,17 @@ textarea {
   border-radius: 4px;
 }
 
-.mailing-flex {
+.footer__mailing--centering {
   display: flex;
   margin-top: 20px;
 }
 
-.mailing-main {
+.footer__mailing {
   width: 570px;
-  height: 86px;
+  height: 100%;
 }
 
-.button-mailing {
+.footer__button {
   display: flex;
   justify-content: center;
 
@@ -1210,7 +1204,7 @@ textarea {
   outline: none;
 }
 
-.icon-mailing {
+.footer__iconmailing {
   margin-left: 10px;
 }
 

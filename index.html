@@ -431,44 +431,44 @@
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients">
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="44" height="49">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="44" height="49">
                   <use href="./svgoptimized/sprite.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="40" height="52">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="40" height="52">
                   <use href="./svgoptimized/sprite.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="41" height="43">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="41" height="43">
                   <use href="./svgoptimized/sprite.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="80" height="42">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="80" height="42">
                   <use href="./svgoptimized/sprite.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="59" height="47">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="59" height="47">
                   <use href="./svgoptimized/sprite.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-icon">
-              <a href="" class="clients-flex">
-                <svg class="svg-flex" width="88" height="45">
+            <li class="clients__list">
+              <a href="" class="clients__link">
+                <svg width="88" height="45">
                   <use href="./svgoptimized/sprite.svg#icon-logo-6"></use>
                 </svg>
               </a>
@@ -481,57 +481,59 @@
     <!--Футер подвал-->
     <footer class="footer">
       <div class="container">
-        <div class="ttl-flex">
-          <div class="footer-flex">
+        <div class="footer__baseline">
+          <div class="footer__address">
             <a href="" class="logo"
               >Web<span class="logo__studio--white">Studio</span></a
             >
-            <address class="adress-footer">
+            <address class="footer__address--physical">
               г. Киев, пр-т Леси Украинки, 26
             </address>
-            <ul class="list footer-address">
-              <li class="footer-address__item">
-                <a href="mailto:info@example.com" class="footer-address__link"
+            <ul class="list">
+              <li class="footer__address--virtual">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer__link--transition"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-address__item">
-                <a href="tel:+380991111111" class="footer-address__link"
+              <li class="footer__address--virtual">
+                <a href="tel:+380991111111" class="footer__link--transition"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </div>
 
-          <div class="join">
-            <p class="footer-join">присоединяйтесь</p>
-            <ul class="join-list">
-              <li class="join-margin">
-                <a href="" class="join-master">
-                  <svg class="join-size">
+          <div class="footer__join">
+            <p class="footer__join--appeal">присоединяйтесь</p>
+            <ul class="footer__networklist">
+              <li class="footer__networklist--positioning">
+                <a href="" class="footer__networklist--centering">
+                  <svg class="footer__iconnetwork">
                     <use
                       href="./svgoptimized/sprite.svg#icon-instagram-2"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-margin">
-                <a href="" class="join-master">
-                  <svg class="join-size">
+              <li class="footer__networklist--positioning">
+                <a href="" class="footer__networklist--centering">
+                  <svg class="footer__iconnetwork">
                     <use href="./svgoptimized/sprite.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-margin">
-                <a href="" class="join-master">
-                  <svg class="join-size">
+              <li class="footer__networklist--positioning">
+                <a href="" class="footer__networklist--centering">
+                  <svg class="footer__iconnetwork">
                     <use href="./svgoptimized/sprite.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-margin">
-                <a href="" class="join-master">
-                  <svg class="join-size">
+              <li class="footer__networklist--positioning">
+                <a href="" class="footer__networklist--centering">
+                  <svg class="footer__iconnetwork">
                     <use href="./svgoptimized/sprite.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -539,19 +541,19 @@
             </ul>
           </div>
 
-          <form class="mailing-main">
-            <b class="mailing">Подпишитесь на рассылку</b>
-            <div class="mailing-flex">
+          <form class="footer__mailing">
+            <b class="footer__mailing--appeal">Подпишитесь на рассылку</b>
+            <div class="footer__mailing--centering">
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="mailing-form"
+                class="footer__form"
               />
 
-              <button type="submit" class="button-mailing">
+              <button type="submit" class="footer__button">
                 Подписаться
-                <svg class="icon-mailing" width="24" height="24">
+                <svg class="footer__iconmailing" width="24" height="24">
                   <use href="./svgoptimized/sprite.svg#icon-icon-send"></use>
                 </svg>
               </button>
@@ -560,13 +562,16 @@
         </div>
       </div>
     </footer>
+
     <!-- модальное окно -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal-window">
         <form class="modal-form">
-          <p class="modal-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal-form__paragraph">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
 
-          <div role="group" class="modal-thumb">
+          <div role="group" class="modal-form__thumb">
             <div class="field-form">
               <label for="name">Имя</label>
               <div class="position-form">
