@@ -572,42 +572,52 @@
           </p>
 
           <div role="group" class="modal-form__thumb">
-            <div class="field-form">
+            <div class="modal-form__input">
               <label for="name">Имя</label>
-              <div class="position-form">
-                <input type="text" name="text" id="name" class="border-form" />
-                <svg class="name-form" width="12" height="12">
+              <div class="modal-form__icon">
+                <input
+                  type="text"
+                  name="text"
+                  id="name"
+                  class="modal-form__border"
+                />
+                <svg class="modal-form__svg" width="12" height="12">
                   <use href="./svgoptimized/sprite.svg#icon-name-form"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="field-form">
+            <div class="modal-form__input">
               <label for="tel">Телефон</label>
-              <div class="position-form">
-                <svg class="name-form" width="13" height="13">
+              <div class="modal-form__icon">
+                <svg class="modal-form__svg" width="13" height="13">
                   <use href="./svgoptimized/sprite.svg#icon-phone-form"></use>
                 </svg>
-                <input type="tel" name="tel" id="tel" class="border-form" />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="modal-form__border"
+                />
               </div>
             </div>
 
-            <div class="field-form">
+            <div class="modal-form__input">
               <label for="email">Почта</label>
-              <div class="position-form">
-                <svg class="name-form" width="15" height="12">
+              <div class="modal-form__icon">
+                <svg class="modal-form__svg" width="15" height="12">
                   <use href="./svgoptimized/sprite.svg#icon-mail-form"></use>
                 </svg>
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  class="border-form"
+                  class="modal-form__border"
                 />
               </div>
             </div>
 
-            <div class="field-form">
+            <div class="modal-form__input">
               <label for="comments">Комментарий</label>
               <textarea
                 name="comments"
@@ -617,26 +627,30 @@
               ></textarea>
             </div>
           </div>
-          <div class="agreement-box">
+          <div class="modal-form__agreement">
             <input
               type="checkbox"
               name="agreement"
-              class="checkbox"
+              class="modal-form__agreement--hidden"
               id="checkbox"
             />
-            <label for="checkbox" class="check-mark">
+            <label for="checkbox" class="modal-form__agreement--checked">
               Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-body">Условия договора</a></label
+              <a class="modal-form__agreement--contract"
+                >Условия договора</a
+              ></label
             >
           </div>
 
-          <div class="button-container">
-            <button type="submit" class="button-form">Отправить</button>
+          <div class="modal-form__button">
+            <button type="submit" class="modal-form__button--submited">
+              Отправить
+            </button>
           </div>
         </form>
 
-        <button class="modal-close" data-modal-close>
-          <svg class="close-color" width="18" height="18">
+        <button class="modal-form__cross" data-modal-close>
+          <svg class="modal-form__cross--transition" width="18" height="18">
             <use
               href="./svgoptimized/sprite.svg#icon-close-black-18dp-2-1"
             ></use>
