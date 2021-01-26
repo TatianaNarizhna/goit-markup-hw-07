@@ -3,3 +3,8 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin transverseAxisFlex($type: flex) {
+  display: $type;
+  align-items: center;
+}

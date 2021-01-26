@@ -1,0 +1,20 @@
+.header {
+  @extend %backgroundColor;
+  @extend %textColor;
+}
+
+.list {
+  @extend %list;
+}
+
+.link {
+  @extend %link;
+}
+
+.container {
+  @extend %container;
+}
+
+.common-line {
+  @include transverseAxisFlex();
+}

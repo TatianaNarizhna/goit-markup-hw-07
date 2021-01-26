@@ -1,9 +1,24 @@
-%body {
-  background-color: var(--white-hero-color);
-  color: var(--primary-text-color);
+%backgroundColor {
+  background-color: $white-hero-color;
+}
+
+%textColor {
+  color: $primary-text-color;
+}
+
+%fontFamily {
   font-family: Roboto, sans-serif;
+}
+
+%letterSpacing {
   letter-spacing: 0.03em;
+}
+
+%fontWeight {
   font-weight: normal;
+}
+
+%fontSize {
   font-size: 14px;
 }
 
@@ -15,4 +30,18 @@
 
 %link {
   text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }

@@ -268,4 +268,39 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+.header {
+  background-color: #ffffff;
+}
+
+.header {
+  color: #212121;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.common-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=profile.css.map */
