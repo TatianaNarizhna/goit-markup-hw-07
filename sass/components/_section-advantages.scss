@@ -54,3 +54,56 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+.list__content--describing {
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $secondary-text-color;
+}
+
+.vector {
+  @include centeredFlex();
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bgc-halfwhite;
+
+  &__size {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.diagram {
+  @include centeredFlex();
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bgc-halfwhite;
+
+  &__size {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.Group {
+  @include centeredFlex();
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bgc-halfwhite;
+
+  &__size {
+    height: 70px;
+    width: 70px;
+  }
+}

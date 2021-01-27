@@ -20,3 +20,11 @@ body {
   @extend %letterSpacing;
   @extend %fontWeight;
 }
+
+img {
+  @extend %img;
+}
+
+.section {
+  @extend %section;
+}
