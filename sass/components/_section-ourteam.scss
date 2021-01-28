@@ -88,7 +88,7 @@
   // background-color: var(--white-hero-color);
   fill: $network-color;
 
-  @include doubleTransition(background-color fill);
+  @include doubleTransition(background-color, fill);
 }
 
 .team-workers__network--transition:focus,

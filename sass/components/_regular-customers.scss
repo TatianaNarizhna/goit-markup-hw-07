@@ -33,7 +33,7 @@
   fill: $network-color;
   border: 1px solid $network-color;
 
-  @include doubleTransition(border-color fill);
+  @include doubleTransition(border-color, fill);
 
   &:hover,
   &:focus {

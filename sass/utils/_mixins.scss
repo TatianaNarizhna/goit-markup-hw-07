@@ -15,8 +15,15 @@
   transition-timing-function: $timing-function;
 }
 
-@mixin doubleTransition($type, $type) {
-  transition-property: $type;
+@mixin doubleTransition($type1, $type2) {
+  transition-property: $type1, $type2;
   transition-duration: 250ms, 250ms;
-  transition-timing-function: var(--timing-function), var(--timing-function);
+  transition-timing-function: $timing-function, $timing-function;
+}
+
+@mixin tripleTransition($type1, $type2, $type3) {
+  transition-property: $type1, $type2, $type3;
+  transition-duration: 250ms, 250ms, 250ms;
+  transition-timing-function: $timing-function, $timing-function,
+    $timing-function;
 }
