@@ -270,27 +270,27 @@ summary {
   display: list-item;
 }
 
-body, .header {
+body {
   background-color: #ffffff;
 }
 
-body, .header {
+body {
   color: #212121;
 }
 
-body, .header, .hero {
+body {
   font-family: Roboto, sans-serif;
 }
 
-body, .header {
+body {
   letter-spacing: 0.03em;
 }
 
-body, .header {
+body {
   font-weight: normal;
 }
 
-body, .header {
+body {
   font-size: 14px;
 }
 
@@ -330,6 +330,51 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/raleway-v18-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .logo {
@@ -501,8 +546,8 @@ img {
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(54, 56, 67, 0.4)), to(rgba(54, 56, 67, 0.4))), url("../imagesoptimized/hero img.jpg");
   background-image: linear-gradient(to right, rgba(54, 56, 67, 0.4), rgba(54, 56, 67, 0.4)), url("../imagesoptimized/hero img.jpg");
-  background-color: var(--hero-bgc-color);
-  border-top: 1px solid var(--border);
+  background-color: var(#c4c4c4);
+  border-top: 1px solid #ececec;
 }
 
 .hero {
@@ -521,7 +566,6 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   color: #ffffff;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -680,12 +724,11 @@ img {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .skills {
@@ -784,11 +827,11 @@ img {
 }
 
 .team-workers__position {
+  margin-top: 0;
+  margin-bottom: 16px;
   line-height: 1.18;
   font-size: 16px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 16px;
   font-weight: normal;
   color: #757575;
 }
@@ -833,9 +876,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   fill: #afb1b8;
   -webkit-transition-property: background-color, fill;
   transition-property: background-color, fill;
@@ -942,7 +985,6 @@ img {
 .footer__address--physical {
   display: block;
   color: #ffffff;
-  font-style: normal;
   line-height: 1.71;
   margin-bottom: 9px;
 }
@@ -1158,6 +1200,9 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal-window {
   -webkit-transform: scale(0.8) translate(-50%, -50%);
           transform: scale(0.8) translate(-50%, -50%);
 }

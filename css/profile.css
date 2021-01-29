@@ -270,27 +270,27 @@ summary {
   display: list-item;
 }
 
-body, .header {
+body {
   background-color: #ffffff;
 }
 
-body, .header {
+body {
   color: #212121;
 }
 
-body, .header {
+body {
   font-family: Roboto, sans-serif;
 }
 
-body, .header {
+body {
   letter-spacing: 0.03em;
 }
 
-body, .header {
+body {
   font-weight: normal;
 }
 
-body, .header {
+body {
   font-size: 14px;
 }
 
@@ -330,6 +330,51 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/raleway-v18-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .logo {
@@ -522,7 +567,6 @@ img {
 .footer__address--physical {
   display: block;
   color: #ffffff;
-  font-style: normal;
   line-height: 1.71;
   margin-bottom: 9px;
 }
@@ -831,9 +875,9 @@ img {
 .table-portfolio__content {
   padding: 20px 24px;
   height: 110px;
-  border-right: 1px solid var(--portfolio-border);
-  border-bottom: 1px solid var(--portfolio-border);
-  border-left: 1px solid var(--portfolio-border);
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects {
@@ -846,5 +890,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: none;
   margin-bottom: 4px;
+}
+
+.table-portfolio__application {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
 }
 /*# sourceMappingURL=profile.css.map */

@@ -1,12 +1,3 @@
-.header {
-  @extend %backgroundColor;
-  @extend %textColor;
-  @extend %fontFamily;
-  @extend %fontSize;
-  @extend %letterSpacing;
-  @extend %fontWeight;
-}
-
 .list {
   @extend %list;
 }
@@ -92,7 +83,7 @@
     background-color: $accent-color;
     opacity: 1;
 
-    @include transition($type: opacity);
+    @include transition(opacity);
   }
 }
 

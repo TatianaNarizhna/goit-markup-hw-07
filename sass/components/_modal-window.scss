@@ -32,12 +32,14 @@
   min-width: 528px;
   min-height: 581px;
   background-color: $white-hero-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px $box-shadow-grid1, 0px 1px 1px $box-shadow,
+    0px 2px 1px $backdrop;
   border-radius: 4px;
 
   @include transition(transform);
+}
 
+.backdrop.is-hidden .modal-window {
   transform: scale(0.8) translate(-50%, -50%);
 }
 
