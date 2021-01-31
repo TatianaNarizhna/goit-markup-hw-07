@@ -1377,7 +1377,7 @@ img {
 
 .modal-form__agreement--hidden:checked + .modal-form__agreement--checked::before {
   background-color: #2196f3;
-  background-image: url(/imagesoptimized/icon-check.svg);
+  background-image: url(../imagesoptimized/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
