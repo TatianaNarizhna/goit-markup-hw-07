@@ -49,34 +49,3 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url('../fonts/raleway-v18-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-.logo {
-  color: $accent-color;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  display: inline-block;
-  @extend %link;
-}
-
-.container {
-  @extend %container;
-}
-
-body {
-  @extend %backgroundColor;
-  @extend %textColor;
-  @extend %fontFamily;
-  @extend %fontSize;
-  @extend %letterSpacing;
-  @extend %fontWeight;
-}
-
-img {
-  @extend %img;
-}
-
-.section {
-  @extend %section;
-}
